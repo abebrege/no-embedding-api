@@ -10,7 +10,7 @@ INSERT INTO institutions (institutionId, shortName, name, location, type) VALUES
 ('f9eef6ae-93fb-488f-af2d-c56e5b20f5e8', 'IBM', 'IBM Research', 'Yorktown Heights, NY', 'Industry Research Lab'),
 ('ad7903ba-fce3-4966-8ede-558c0d10f3c4', 'Caltech', 'California Institute of Technology', 'Pasadena, CA', 'University'),
 ('5b01e731-9479-4de7-b00d-53eeda515a43', 'Quantinuum', 'Quantinuum Research', 'Broomfield, CO', 'Industry Research Lab'),
-('2f9752c5-a746-4484-8ad6-9aa35d62a70a', 'UC Berkeley', 'University of California, Berkeley', 'Berkeley, CA', 'University'),
+('2f9752c5-a746-4484-8ad6-9aa35d62a70a', 'UC Berkeley', 'University of California Berkeley', 'Berkeley, CA', 'University'),
 ('8a2b4c6d-9e7f-4a1b-8c5d-3e9f7b2a6c8d', 'UChicago', 'University of Chicago', 'Chicago, IL', 'University'),
 ('7b8c9d5e-4f2a-3b6c-9d8e-5f1a7b4c9d2e', 'UW-Madison', 'University of Wisconsin-Madison', 'Madison, WI', 'University'),
 ('9c1d2e4f-6a3b-5c7d-8e9f-1a5c9d3e7f2a', 'UTS', 'University of Technology Sydney', 'Ultimo, Australia', 'University'),
