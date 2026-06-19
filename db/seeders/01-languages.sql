@@ -26,6 +26,8 @@ INSERT INTO languages (languageId, name, repoUrl, type, host) VALUES
 ('841a2d32-ecf8-43f0-96a9-f10d4592e613', 'SQIR', 'https://github.com/inQWIRE/SQIR/', 'Intermediate Representation', 'Coq'),
 ('0d00e3b6-0530-43a8-8cad-5b413df7e9c1', 'QIR', 'https://github.com/qir-alliance/qir-spec', 'Intermediate Representation', 'LLVM'),
 ('65aadc12-52f2-4205-b4cd-2e2c7570f089', 'Guppy', 'https://www.quantinuum.com/blog/guppy-programming-the-next-generation-of-quantum-computers', 'Embedded', 'Python'),
-('dbb651c6-7e65-491a-80e4-4dbb7e20e54d', 'isQ', NULL, 'Procedural', NULL);
+('dbb651c6-7e65-491a-80e4-4dbb7e20e54d', 'isQ', NULL, 'Procedural', NULL),
+('68c0ed2f-2bae-4b90-94b1-ae6e7eed9431', 'Qwerty', 'https://github.com/gt-tinker/qwerty', 'Embedded', 'Python'),
+('9e3faf98-1696-43f6-89cc-a6f3f3ba9acb', 'Qrisp', 'https://github.com/eclipse-qrisp/Qrisp', 'Embedded', 'Python');
 
 

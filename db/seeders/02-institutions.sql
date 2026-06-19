@@ -36,7 +36,13 @@ INSERT INTO institutions (institutionId, shortName, name, location, type) VALUES
 ('cd22d006-6c09-4bc0-8926-780d52367b1b', 'NU', 'Nagoya University', 'Nagoya, Japan', 'University'),
 ('31b7c242-64d5-4d2a-9ffa-830fdebd8902', 'UL', 'Université de Lorraine', 'Metz, France', 'University'),
 ('9c05cca1-f423-4342-bcc8-295145900584', 'McGill', 'McGill University', 'Montreal, Canada', 'University'),
-('29eb5feb-79d2-407c-b27b-41adc3d4185d', 'KU', 'University of Copenhagen', 'Copenhagen, Denmark', 'University');
+('29eb5feb-79d2-407c-b27b-41adc3d4185d', 'KU', 'University of Copenhagen', 'Copenhagen, Denmark', 'University'),
+('31dfbf46-6969-43f8-af8a-fb3f58faaf49', 'Georgia Tech', 'Georgia Institute of Technology', 'Atlanta, GA', 'University'),
+('ce467ed5-0582-4ed4-b3b3-971fed9a2fb8', 'ITPV', 'Institute for Theoretical Physics Technical University', 'Vienna, Austria', 'University'),
+('a1668193-f468-43d9-ba11-af85f1fbb5da', 'TUM', 'Technical University of Munich', 'Munich, Germany', 'University'),
+('3240696b-95e0-4e4e-8cc1-c6532c74ca80', 'TU Berlin', 'Technische Universitat Berlin', 'Berlin, Germany', 'University'),
+('c3860511-4d70-4df3-ac9d-8c277bef3baf', 'CiTIUS', 'Centro Singular de Investigación en Tecnoloxías Intelixentes', 'Santiago de Compostela, Spain', 'Research Institute');
+
 
 INSERT INTO research_groups (researchGroupId, name, url, institutionId) VALUES
 ('9b3656b1-1002-445c-a9da-1d17ae93aec4', 'PLUM', 'https://plum-umd.github.io/', '7e8f9a1b-2c3d-4e5f-6a7b-8c9d1e2f3a4b'),
