@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { 
+import asyncRoute from "#root/src/lib/asyncRoute.js";
+import {
   getAllResearchGroups,
   getResearchGroupById,
   createResearchGroup,
@@ -9,14 +10,14 @@ import {
 
 const router = Router();
 
-router.get('/', getAllResearchGroups);
+router.get('/', asyncRoute(getAllResearchGroups));
 
-router.get('/:id', getResearchGroupById);
+router.get('/:id', asyncRoute(getResearchGroupById));
 
-router.post('/', createResearchGroup);
+router.post('/', asyncRoute(createResearchGroup));
 
-router.put('/:id', updateResearchGroup);
+router.put('/:id', asyncRoute(updateResearchGroup));
 
-router.delete('/:id', deleteResearchGroup);
+router.delete('/:id', asyncRoute(deleteResearchGroup));
 
 export default router;
