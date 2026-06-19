@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { 
+import asyncRoute from "#root/src/lib/asyncRoute.js";
+import {
   getAllInstitutions,
   getInstitutionById,
   createInstitution,
@@ -9,14 +10,14 @@ import {
 
 const router = Router();
 
-router.get('/', getAllInstitutions);
+router.get('/', asyncRoute(getAllInstitutions));
 
-router.get('/:id', getInstitutionById);
+router.get('/:id', asyncRoute(getInstitutionById));
 
-router.post('/', createInstitution);
+router.post('/', asyncRoute(createInstitution));
 
-router.put('/:id', updateInstitution);
+router.put('/:id', asyncRoute(updateInstitution));
 
-router.delete('/:id', deleteInstitution);
+router.delete('/:id', asyncRoute(deleteInstitution));
 
 export default router;

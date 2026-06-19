@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { 
+import asyncRoute from "#root/src/lib/asyncRoute.js";
+import {
   getAllLiterature,
   getLiteratureById,
   createLiterature,
@@ -9,14 +10,14 @@ import {
 
 const router = Router();
 
-router.get('/', getAllLiterature);
+router.get('/', asyncRoute(getAllLiterature));
 
-router.get('/:id', getLiteratureById);
+router.get('/:id', asyncRoute(getLiteratureById));
 
-router.post('/', createLiterature);
+router.post('/', asyncRoute(createLiterature));
 
-router.put('/:id', updateLiterature);
+router.put('/:id', asyncRoute(updateLiterature));
 
-router.delete('/:id', deleteLiterature);
+router.delete('/:id', asyncRoute(deleteLiterature));
 
 export default router;

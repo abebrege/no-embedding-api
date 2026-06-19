@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { 
+import asyncRoute from "#root/src/lib/asyncRoute.js";
+import {
   getAllLanguages,
   getLanguageById,
   createLanguage,
@@ -9,14 +10,14 @@ import {
 
 const router = Router();
 
-router.get('/', getAllLanguages);
+router.get('/', asyncRoute(getAllLanguages));
 
-router.get('/:id', getLanguageById);
+router.get('/:id', asyncRoute(getLanguageById));
 
-router.post('/', createLanguage);
+router.post('/', asyncRoute(createLanguage));
 
-router.put('/:id', updateLanguage);
+router.put('/:id', asyncRoute(updateLanguage));
 
-router.delete('/:id', deleteLanguage);
+router.delete('/:id', asyncRoute(deleteLanguage));
 
 export default router;
