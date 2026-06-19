@@ -37,12 +37,16 @@ app.use('/api/institutions', institutionsRoutes);
 app.use('/api/literature', literatureRoutes);
 app.use('/api/research-groups', researchGroupsRoutes);
 
-app.use((error, req, res, next) => {
+app.use((error, req, res, next) => { // eslint-disable-line no-unused-vars
   console.error('Error:', error);
-  res.status(500).json({ 
-    error: 'Internal server error',
-    message: process.env.NODE_ENV === 'development' ? error.message : 'Something went wrong'
-  });
+
+  const status = error.status || (error.code === 'ER_DUP_ENTRY' ? 409 : 500);
+
+  const message = status >= 500
+    ? (process.env.NODE_ENV === 'development' ? error.message : 'Something went wrong')
+    : error.message;
+
+  res.status(status).json({ success: false, error: message });
 });
 
 app.use('*', (req, res) => {
