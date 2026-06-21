@@ -28,6 +28,7 @@ INSERT INTO languages (languageId, name, repoUrl, type, host, summary) VALUES
 ('65aadc12-52f2-4205-b4cd-2e2c7570f089', 'Guppy', 'https://www.quantinuum.com/blog/guppy-programming-the-next-generation-of-quantum-computers', 'Embedded', 'Python', NULL),
 ('dbb651c6-7e65-491a-80e4-4dbb7e20e54d', 'isQ', NULL, 'Procedural', NULL, NULL),
 ('68c0ed2f-2bae-4b90-94b1-ae6e7eed9431', 'Qwerty', 'https://github.com/gt-tinker/qwerty', 'Embedded', 'Python', 'A high-level, basis-oriented quantum language embedded in Python that abstracts away individual qubits and gates in favor of reasoning about bases and functions.'),
-('9e3faf98-1696-43f6-89cc-a6f3f3ba9acb', 'Qrisp', 'https://github.com/eclipse-qrisp/Qrisp', 'Embedded', 'Python', 'A high-level Python framework that raises quantum programming above the circuit level with managed QuantumVariables and automatic qubit allocation.');
+('9e3faf98-1696-43f6-89cc-a6f3f3ba9acb', 'Qrisp', 'https://github.com/eclipse-qrisp/Qrisp', 'Embedded', 'Python', 'A high-level Python framework that raises quantum programming above the circuit level with managed QuantumVariables and automatic qubit allocation.'),
+('23hfaf98-3245-43f6-833c-a3gbf35664dd', 'Qurts', NULL, 'Embedded', 'Rust', "A high-level extension of Rust that leverages Rust's ownership and type systems to provide automatic uncomputation and quantum control.");
 
 
